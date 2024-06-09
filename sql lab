@@ -1,0 +1,46 @@
+
+
+CREATE TABLE students (
+     id int,
+  age int,
+  firstname nchar(20),
+  lastname varchar(25),
+  city char(30),
+  uni nvarchar(256)
+  )
+  
+  INSERT INTO students (id,age,lastname,firstname,city,uni)
+  VALUES(1,20,'Elmir','Hesenov','Sumqayit','Ada'),
+  (2,21,'Elnur','Habilov','Baki','Aztu'),
+   (3,21,'Ruslan','Habilov','Baki','Aztu'),
+  (4,22,'Ibrahim','ebilov','Seki','Bdu');
+  
+  SELECT firstname FROM students where city ='Sumqayit'
+  
+  select *from students;
+  
+  select age from students;
+  select firstname,lastname from students;
+  
+  select *from students where firstname like 'a%' or firstname like "t%"
+  select *from students where firstname != 'Elnur'
+    INSERT INTO students (id,age,lastname,firstname,city,uni)
+    Values(3,21,'Ruslan','Habilov','Baki','Aztu');
+  
+  select *from students
+  select *FROM students where firstname like'_u%';
+  
+  update students set city ='Rome' where id IN (2,3);
+  select *from students where age >20;
+  select *from students order by firstname desc;
+  select *from students order by age desc;
+  select distinc *from  students
+  select sum(age) from students
+  select top 1*from students order by age ASC;
+  select top 1*from students order by age DESC;
+  select count(*) from students
+  select avg(avg) from students
+  delete from students where id=5;
+  select *from students
+  
+  
